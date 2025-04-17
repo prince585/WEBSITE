@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stylish Page</title>
+
+  <!-- Google Font: Lora -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <h4>hey</h4>
+<body class="light-mode">
+
+  <div class="container">
+    <h1>Welcome to My Stylish Website</h1>
+    <p>This is a sample paragraph using the Lora font.</p>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+
+  <!-- JavaScript to toggle theme -->
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      document.body.classList.toggle("light-mode");
+    }
+  </script>
+
 </body>
 </html>
