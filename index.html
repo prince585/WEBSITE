@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GreenSankalp</title>
 </head>
 <body>
   <header>
-    <span>🏠</span>
+    <button>🏠</button>
     <h1>Welcome to GreenSankalp</h1>
-    <span>🌓</span>
-    <span>👤</span>
-    <span>☰</span>
+    <button id="theme-toggle">🌗</button>
+    <button >👤</button>
+    <button>☰</button>
   </header>
   <section>
     <h2>Growing plants is easy</h2>
@@ -39,10 +40,39 @@
       <p>Aloe Vera</p>
     <button><a href="plant3.html">View Guide</a></button>  
     </div>
+    <div>
+      <img src="img.jpg" alt="Plant 3" width="100">
+      <p>Aloe Vera</p>
+    <button><a href="plant4.html">View Guide</a></button>  
+    </div>
+    <div>
+      <img src="img.jpg" alt="Plant 3" width="100">
+      <p>Aloe Vera</p>
+    <button><a href="plant5.html">View Guide</a></button>  
+    </div>
+    <div>
+      <img src="img.jpg" alt="Plant 3" width="100">
+      <p>Aloe Vera</p>
+    <button><a href="plant6.html">View Guide</a></button>  
+    </div>
+    <div>
+      <img src="img.jpg" alt="Plant 3" width="100">
+      <p>Aloe Vera</p>
+    <button><a href="plant7.html">View Guide</a></button>  
+    </div>
     </div>
   </section>
   <footer>
-    <p>&copy; 2025 GreenSankalp. All rights reserved.</p>
-  </footer>  
+    <p>© 2025 GreenSankalp. Made with 🌱 by PRINCE VERMA</p>
+  </footer>
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+  
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-theme');
+    });
+  </script>
+  
 </body>
 </html>

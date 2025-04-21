@@ -1,0 +1,86 @@
+/* Store the colors */
+:root {
+    --soft-ivory: #EDE6D8;
+    --dark-cocoa: #311B14;
+  }
+  
+  /* Apply background, font and text color to body */
+  body {
+    background-color: var(--soft-ivory); /* Soft background */
+    color: var(--dark-cocoa);            /* Cocoa text */
+    font-family: 'Lora', serif;          /* Stylish font */
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    display: flex;                          /* Arrange items in a row */
+    align-items: center;                   /* Vertically center items */
+    justify-content: space-between;        /* Space between button and text */
+    padding: 1rem 2rem;                    /* Space inside header */
+    background-color: var(--dark-cocoa);   /* Background color */
+    color: var(--soft-ivory);              /* Text color */
+  }
+#plant{
+    display: flex;             /* Place items side by side */
+  gap: 2rem;                 /* Space between text and image */
+  padding: 2rem;             /* Padding around section */
+  align-items: center;       /* Vertically align items */
+}
+#plant .text {
+    flex: 1;                   /* Text takes 50% space */
+  }
+  
+  #plant .image {
+    flex: 1;                   /* Image takes 50% space */
+    text-align: center;
+  }
+  
+  #plant img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;       /* Soft corners */
+  
+}
+#how {
+    padding: 2rem;
+    background-color: #f7f5ef; /* Light beige background for contrast */
+    border-top: 2px solid var(--dark-cocoa);
+    border-bottom: 2px solid var(--dark-cocoa);
+  }
+  
+  #how h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-cocoa);
+  }
+  
+  #how ol {
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333; /* A little darker for readability */
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--dark-cocoa);
+    color: var(--soft-ivory);
+    font-size: 0.9rem;
+  }
+  :root {
+    --dark-cocoa: #3B1E17;
+    --soft-ivory: #F3E9D2;
+    --button-bg: #8c6e63;
+    --text-dark: #2E2E2E;
+  }
+  
+  /* Dark Theme Toggle */
+  .dark-theme {
+    --dark-cocoa: #f3e9d2;
+    --soft-ivory: #3B1E17;
+    --text-dark: #fefefe;
+    --button-bg: #442d2d;
+    background-color: var(--soft-ivory);
+    color: var(--text-dark);
+  }
+  
